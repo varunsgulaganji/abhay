@@ -1,0 +1,39 @@
+
+
+
+<!-- <div class="container">
+    <h3 class="title" style="color: aliceblue;">Join Us On</h3>
+    <div class="letter">
+    <h6>#Youtude|#Instagram|#Instagram</h6>
+</div> <br> <br>
+    <div class="social-media">
+      <div class="social-item" *ngFor="let platform of platforms">
+        <i [class]="platform.icon" data-bs-toggle="tooltip" data-bs-placement="top" [attr.title]="platform.url">
+          <br> {{ platform.name }}
+          <br>
+          {{ platform.description }}
+        </i>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <div class="container">
+    <h3 class="title" style="color: aliceblue;">Join Us On</h3>
+    <div class="letter">
+      <h6>#Youtube | #Instagram | #Instagram</h6>
+    </div>
+    <br><br>
+    <div class="social-media">
+      <div class="social-item" *ngFor="let platform of platforms">
+        <a [href]="platform.url" target="_blank">
+          <i [class]="platform.icon" data-bs-toggle="tooltip" data-bs-placement="top" [attr.title]="platform.name">
+            <br> {{ platform.name }}
+            <br> {{ platform.description }}
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+  

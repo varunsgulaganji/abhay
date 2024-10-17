@@ -1,0 +1,99 @@
+/* Ensure full width for the navbar */
+.navbar {
+    width: 100%;
+    height: auto;
+    background-image: url('/assets/img/nav6.jpg') ;
+    background-size: cover;
+    /* background: linear-gradient(rgba(46, 31, 46, 0.884),rgba(167, 135, 175, 0.466), rgba(46, 31, 46, 0.884)); */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:'Times New Roman';
+     background-repeat: repeat;
+
+
+}
+
+.navbar, .container-fluid {
+    overflow: hidden;
+}
+
+/* Styling for the brand section */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(48, 34, 48); /* Dark text color */
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Rounded logo */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+/* Styling for the title within the navbar-brand */
+.navbar-brand h1 {
+     /* Font size for title */
+    margin: 0; /* Remove default margin */
+    color: white; /* Ensure the title color */
+}
+
+/* Navbar toggler styling */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    width: 30px; /* Width of the toggler icon */
+    height: 30px; /* Height of the toggler icon */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Ensures horizontal alignment */
+    flex-wrap: wrap;
+    justify-content: center; /* Centers links horizontally */
+    width: 100%; /* Ensures navbar links take full width */
+    padding-left: 0; /* Remove default padding */
+    padding-right: 0; /* Remove default padding */
+    margin-left: auto; /* Ensure centering alignment */
+    margin-right: auto; /* Ensure centering alignment */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: white; /* Default link color */
+    font-size: 20px;
+    font-weight: 500; /* Slightly bold text */
+    padding: 8px 20px; /* Padding for clickable area */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Active and hover states for links */
+.navbar-nav .nav-link:link,
+.navbar-nav .nav-link.visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover{
+    color: rgb(212, 194, 212);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    box-shadow: 0 8px 16px rgba(82, 81, 81, 0.7);
+
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(48, 34, 48);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+

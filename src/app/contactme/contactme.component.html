@@ -1,0 +1,87 @@
+<main>
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact Me</h2>
+    <span class="section__subtitle" style="color: bisque;">Get in touch</span>
+
+    <div class="contact__container container grid">
+      <div>
+        <div class="contact__information">
+          <i class="uil uil-calling contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Contact Me</h3>
+            <span class="contact__subtitle"
+            style="color: bisque;" ><a href="tel:9986972400" ></a>9986972400</span
+            >
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-envelope-minus contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Email</h3>
+            <span class="contact__subtitle"
+            style="color: bisque;">abhaybgarwad&#64;gmail.com</span
+            >
+          </div>
+        </div>
+
+        <div class="contact__information">
+          <i class="uil uil-map-marker contact__icon"></i>
+
+          <div>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__subtitle"
+            style="color: bisque;" >Hubli, Karnataka, India</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <form #fg="ngForm" action="" class="contact__form grid">
+        <div class="contact__inputs grid">
+          <div class="contact__content">
+            <label for="firstname" class="content__label">Name</label>
+            <input ngModel #firstname="ngModel"  name="firstname" required minlength="4"  type="text" class="contact__input" />
+            <div class="alert alert-danger" *ngIf="firstname.touched && firstname.invalid">
+                <div *ngIf="firstname.errors?.['required']">Required to enter Name</div>
+                <div *ngIf="firstname.errors?.['minlength']">Minimum length is 4 characters</div>
+              </div>
+          </div>
+
+          <div class="contact__content">
+            <label for="emailid" class="content__label">Email</label>
+            <input ngModel #emailid="ngModel" name="emailid"  required minlength="8" type="Email" class="contact__input" />
+            <div class="alert alert-danger" *ngIf="emailid.touched && emailid.invalid">
+                <div *ngIf="emailid.errors?.['required']">Required to enter email</div>
+                <div *ngIf="emailid.errors?.['minlength']">Email ID must be at least 8 characters</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <label for="" class="content__label">Message</label>
+          <textarea
+            name=""
+            id=""
+            cols="0"
+            rows="7"
+            class="contact__input"
+          ></textarea>
+        </div>
+
+        <div>
+          <a
+            href="mailto:abhaybgarwad212@gmail.com?subject=Any Queries Plz let us know! &body=Any Queries Contact US!"
+            class="button button--flex"
+          >
+            Send Message
+            <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+

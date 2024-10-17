@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/img/logo.jpg" alt="Logo" width="80px" height="80px" class="d-inline-block align-text-top rounded-circle">
+           
+         </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/home']" routerLinkActive="active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active" href="#">About-Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/decoration']" routerLinkActive="active" href="#">Decoration</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" href="#">Contact-Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+
+  
+
+  

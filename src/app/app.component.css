@@ -1,0 +1,168 @@
+/* .carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.carousel .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width:max-content;
+    z-index: 100;
+    display: flex;
+    gap:20px;
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.thumbnail .item .content{
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+    right: 10px;
+}
+
+.thumbnail .item .content .title
+{
+  font-weight: bold;  
+}
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    z-index: 100;
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color:#555;
+
+}
+
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes showContent{
+    to{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.carousel .list .item:nth-child(1) .buttons{
+animation-delay: 1.8s;
+} */
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space out the heading and map */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+  }
+  
+  .heading-container {
+    flex: 1 1 auto; /* Allow to grow and shrink, but fit content */
+    margin-right: 20px; /* Space between heading and map */
+  }
+  
+  .map-container {
+    flex: 1 1 auto; /* Allow to grow and shrink, but fit content */
+    min-width: 400px; /* Ensure map has a minimum width */
+    
+  }
+  
+
+  iframe {
+    width: 100%; /* Make iframe responsive */
+    height: 400px; /* Set a height for the iframe */
+    border: 0;
+  }
+  
+  h1 {
+    margin: 0; /* Remove default margins */
+    color: #007bff; /* Set color for the heading */
+    font-size: 50px; /* Adjust font size as needed */
+  }
+
+  td{
+    color: whitesmoke;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+      transform: translate(-100px);
+      /* clip-path: inset(0 0 0 0); */
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+      transform: translateX(0px);
+      /* clip-path: inset(0 0 0 0); */
+    }
+  }
+
+
+  .social{
+    animation: appear 1s linear; 
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+  }
+
+  .contact{
+    background: #111222;
+  }

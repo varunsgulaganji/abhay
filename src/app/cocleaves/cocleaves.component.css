@@ -1,0 +1,14 @@
+.container-fluid{
+    font-family:'Times New Roman';
+}
+
+h1,h3{
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

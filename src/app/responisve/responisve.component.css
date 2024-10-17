@@ -1,0 +1,93 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel .list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel .list .item {
+    min-width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbnail {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail .item {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbnail .item.active {
+    transform: scale(1.1);
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .arrows button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .arrows button:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .thumbnail .item {
+      width: 60px;
+      height: 45px;
+    }
+  
+    .arrows button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+  

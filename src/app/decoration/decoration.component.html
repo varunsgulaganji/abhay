@@ -1,0 +1,28 @@
+ 
+  <div>
+<app-caurosel></app-caurosel>
+  
+<!-- <app-cauroselhome></app-cauroselhome> -->
+
+<!-- <app-responisve></app-responisve> -->
+
+<div class="container-fluid">
+  <span *ngFor="let x of crssections" class="sectionoptions">
+  <button type="button" class="btn" (click)="onclick(x)">{{x}}</button>
+  </span>
+
+<div [ngSwitch]="category" class="section">
+  <app-stage *ngSwitchCase="'Platform'"></app-stage>
+  <app-mandap *ngSwitchCase="'Canopy'"></app-mandap>
+  <app-coupleentrance *ngSwitchCase="'Bridal Entrance'"></app-coupleentrance>
+  <!-- <app-houselighting *ngSwitchCase="'Ambient Lighting'"></app-houselighting> -->
+   <app-houselighting *ngSwitchCase="'Ambient Lighting'"></app-houselighting>
+  <app-housedeco *ngSwitchCase="'Interior Decor'"></app-housedeco>
+  <app-selfie *ngSwitchCase="'Selfie Stand'"></app-selfie>
+  <app-cocleaves *ngSwitchCase="'Palm Fronds'"></app-cocleaves>
+  <app-all *ngSwitchCase="'ALL'"></app-all>
+  <app-stage *ngSwitchDefault></app-stage>  
+</div>
+</div>
+
+</div>

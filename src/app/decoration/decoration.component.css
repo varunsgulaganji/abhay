@@ -1,0 +1,40 @@
+.container-fluid{
+    /* background: linear-gradient(rgba(147, 137, 153, 0.719), rgb(234, 227, 238), rgba(147, 137, 153, 0.719));
+     */
+    background: #111222;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 10px;
+    font-family:'Times New Roman';
+
+}
+
+.sectionoptions{
+    margin: 5px auto;
+
+    
+}
+.section{
+    color: white;
+}
+
+.btn{
+    background: radial-gradient(rgb(245, 243, 243),lightblue);
+
+    width: 180px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid rgba(34, 29, 37, 0.719);
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.btn:hover{
+    transform: scale(1.10);
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    box-shadow: 0 8px 16px rgba(12, 12, 12, 0.7);
+}

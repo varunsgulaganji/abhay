@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    padding: 0;
+}
+
+.container ul{
+    display: inline-flex;
+    padding-left: 0;
+}
+
+.container .fa{
+    font-size: 20px;
+    color: rgb(255, 0, 247);
+    margin:0 2px;
+}
