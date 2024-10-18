@@ -41,12 +41,14 @@
 /* Navbar toggler styling */
 .navbar-toggler {
     border: none;
-    background: transparent;
+    background: rgb(211, 39, 177) ;
+    
 }
 
 .navbar-toggler-icon {
     width: 30px; /* Width of the toggler icon */
     height: 30px; /* Height of the toggler icon */
+   
 }
 
 .navbar-nav {
