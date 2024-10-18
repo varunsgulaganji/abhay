@@ -13,7 +13,7 @@ import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
 import { AboutchooseComponent } from './aboutchoose/aboutchoose.component';
 import { AboutfooterComponent } from './aboutfooter/aboutfooter.component';
 import { HomeMEComponent } from './home-me/home-me.component';
-import { HoverDirective } from './hover.directive';
+
 import { Home1Component } from './home1/home1.component';
 import { FooterComponent } from './footer/footer.component';
 import { CauroselhomeComponent } from './cauroselhome/cauroselhome.component';
@@ -48,7 +48,7 @@ import { VarunComponent } from './varun/varun.component';
     AboutchooseComponent,
     AboutfooterComponent,
     HomeMEComponent,
-    HoverDirective,
+    
     Home1Component,
     FooterComponent,
     CauroselhomeComponent,

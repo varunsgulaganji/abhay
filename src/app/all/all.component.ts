@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 interface Course{
   image: string;
   name: string;
